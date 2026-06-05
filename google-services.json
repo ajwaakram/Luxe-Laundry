@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "89362758775",
+    "project_id": "luxelaundary-b25e1",
+    "storage_bucket": "luxelaundary-b25e1.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:89362758775:android:2de42b505754e64b5b1a72",
+        "android_client_info": {
+          "package_name": "com.find.luxelaundary"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBeu77R5FAEebu1Xp9ADINr9iLchRclPtY"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

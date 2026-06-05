@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <application
+        android:allowBackup="true"
+        android:dataExtractionRules="@xml/data_extraction_rules"
+        android:fullBackupContent="@xml/backup_rules"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.LuxeLaundary"
+        tools:targetApi="31">
+
+        <activity
+            android:name=".OrderDetailActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.MyAdminOrder"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.ViewFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.viewSubServices"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.addSubServices"
+            android:exported="false" />
+        <activity
+            android:name=".User.My_Order"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Add_Services_Admin"
+            android:exported="false" />
+        <activity
+            android:name=".StainDescription"
+            android:exported="false" />
+        <activity
+            android:name=".StainDetectionActivity"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Attributes_admin"
+            android:exported="false" />
+        <activity
+            android:name=".confirm"
+            android:exported="false" />
+        <activity
+            android:name=".Checkout_user"
+            android:exported="false" />
+        <activity
+            android:name=".Cancelled_user"
+            android:exported="false" />
+        <activity
+            android:name=".Pending_user"
+            android:exported="false" />
+        <activity
+            android:name=".Receive_user"
+            android:exported="false" />
+        <activity
+            android:name=".services_user"
+            android:exported="false" />
+        <activity
+            android:name=".Feedback_user"
+            android:exported="false" />
+        <activity
+            android:name=".Favourites_service_user"
+            android:exported="false" />
+        <activity
+            android:name=".Offers_users"
+            android:exported="false" />
+        <activity
+            android:name=".Profile_user"
+            android:exported="false" />
+        <activity
+            android:name=".About"
+            android:exported="false" />
+        <activity
+            android:name=".Chat_user"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.homescreen_admin"
+            android:exported="false" />
+        <activity
+            android:name=".Forgot_Password_user"
+            android:exported="false" />
+        <activity
+            android:name=".Login_user"
+            android:exported="false" />
+        <activity
+            android:name=".Register_user"
+            android:exported="false" />
+        <activity
+            android:name=".Forgot_Password_admin"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.ViewFeedback"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.view_customer_admin"
+            android:exported="false" />
+        <activity
+            android:name=".Admin.Adduser_admin"
+            android:exported="false" />
+        <activity
+            android:name=".User.Homescreen_user"
+            android:exported="false" />
+        <activity
+            android:name=".View_Cart"
+            android:exported="false" />
+        <activity
+            android:name=".splash"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>
