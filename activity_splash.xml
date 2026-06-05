@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    android:padding="16dp"
+    android:background="#ffffff"
+    tools:context=".splash">
+    <!--    logo-->
+    <ImageView
+        android:id="@+id/Image"
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginBottom="50dp"
+        android:cropToPadding="true"
+        android:src="@drawable/logo"/>
+    <!--    get started-->
+    <Button
+        android:id="@+id/Username"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="40dp"
+        android:backgroundTint="#FFC83F"
+        android:text="Get Started !"
+        android:textStyle="bold"
+        android:layout_marginTop="60dp"
+        android:textColor="#023d43"
+        android:textSize="16sp"/>
+    <!--    guest-->
+    <TextView
+        android:id="@+id/admin"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:backgroundTint="@color/white"
+        android:text="Admin"
+        android:gravity="center"
+        android:textStyle="bold"
+        android:textColor="#FFC83F"
+        android:textSize="18sp"/>
+</LinearLayout>

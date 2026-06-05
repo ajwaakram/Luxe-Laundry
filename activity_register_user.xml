@@ -1,0 +1,121 @@
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".Register_user"
+    android:background="#ffffff">
+
+    <ImageView
+        android:id="@+id/vector"
+        android:layout_width="match_parent"
+        android:layout_height="230dp"
+        android:layout_gravity="center"
+        android:scaleType="centerCrop"
+        android:src="@drawable/reg_vector"
+        android:layout_marginTop="18dp"
+        android:layout_marginBottom="22dp"/>
+
+    <TextView
+        android:id="@+id/RegisterText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Register your Account"
+        android:textStyle="bold"
+        android:textColor="#023d43"
+        android:textSize="24sp"
+        android:gravity="center"
+        android:layout_marginTop="2dp"
+        android:layout_marginBottom="10dp"/>
+
+    <EditText
+        android:id="@+id/nameInput"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="18dp"
+        android:hint="Enter Name"
+        android:paddingStart="15dp"
+        android:textColorHint="#736F6F"
+        android:textColor="#023d43"
+        android:background="#F6F3F3"
+        android:inputType="text" />
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:background="#F6F3F3"
+        android:orientation="horizontal">
+        <EditText
+            android:id="@+id/passwordInput"
+            android:layout_width="300dp"
+            android:layout_height="48dp"
+            android:hint=" Enter Password"
+            android:inputType="textPassword"
+            android:paddingStart="15dp"
+            android:textColorHint="#736F6F"
+            android:textColor="#023d43"
+            android:background="#F6F3F3"
+            android:layout_marginBottom="18dp"/>
+        <ImageView
+            android:id="@+id/visiblePass"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_gravity="center"
+            android:scaleType="centerCrop"
+            android:src="@drawable/visible" />
+
+
+    </LinearLayout>
+
+
+    <EditText
+        android:id="@+id/EmailInput"
+        android:layout_width="match_parent"
+        android:layout_height="48dp"
+        android:hint="Email Address"
+        android:layout_marginTop="20dp"
+        android:textColorHint="#736F6F"
+        android:textColor="#023d43"
+        android:background="#F6F3F3"
+        android:paddingStart="15dp"
+        android:layout_marginBottom="18dp"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <TextView
+            android:id="@+id/forgotPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="130dp"
+            android:layout_marginTop="10dp"
+            android:text="Forgot Password ?"
+            android:textColor="#023d43"/>
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/signInButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="37dp"
+        android:backgroundTint="#FFC83F"
+        android:text="Register"
+        android:textColor="#023d43"
+        android:textSize="18sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/already"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Already have an account? Login"
+        android:textColor="#023d43"
+        android:textSize="17sp"
+        android:gravity="center"
+        android:layout_marginTop="16dp"/>
+
+</LinearLayout>

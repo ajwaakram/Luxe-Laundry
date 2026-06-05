@@ -1,0 +1,229 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".services_user">
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="70dp"
+            android:background="#FFC83F"
+            android:paddingTop="35dp"
+            android:layout_marginBottom="20dp"
+            android:gravity="center|start"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/back"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_alignParentStart="true"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="-8dp"
+                android:contentDescription="Filter icon"
+                android:src="@drawable/baseline_arrow_back_24" />
+
+            <TextView
+                android:id="@+id/serviceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginStart="70dp"
+                android:layout_marginTop="-8dp"
+                android:layout_toEndOf="@+id/back"
+                android:gravity="center|start"
+                android:text="Services "
+                android:textColor="#023d43"
+                android:textSize="20sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/myCart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_alignParentEnd="true"
+                android:layout_alignParentBottom="true"
+                android:layout_marginTop="-8dp"
+                android:layout_marginEnd="10dp"
+                android:gravity="center|start"
+                android:text="My Cart "
+                android:textColor="#023d43"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+
+        </RelativeLayout>
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbarSize="0dp"
+        android:fillViewport="true">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="@color/white"
+            android:orientation="vertical">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Choose Category"
+
+                android:layout_marginStart="15dp"
+                android:textSize="16sp"
+                android:textColor="#023d43"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/subServiceRecycler"
+                    android:padding="15dp"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"/>
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:padding="1dp"
+                android:layout_height="wrap_content"
+                android:justificationMode="inter_word"
+                android:textAlignment="textStart"
+                android:lineSpacingExtra="1dp"
+                android:text=""
+                android:textColor="#434343"
+                android:layout_marginHorizontal="15dp"
+                android:textSize="16sp"
+                android:textStyle="normal" />
+            <TextView
+                android:id="@+id/sub_serviceName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="20dp"
+                android:textSize="18sp"
+                android:textColor="#023d43"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+
+
+            <TextView
+                android:id="@+id/price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text=""
+                android:textSize="16sp"
+
+                android:layout_marginStart="15dp"
+                android:textColor="#023d43"
+                android:layout_marginBottom="16dp"/>
+
+            <!-- Quantity Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Quantity"
+                android:textSize="16sp"
+                    android:layout_marginTop="20dp"
+                android:layout_marginStart="15dp"
+                android:textColor="#023d43"
+                android:layout_marginBottom="8dp"/>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginStart="15dp"
+                android:layout_marginBottom="16dp">
+
+                <!-- Quantity Buttons -->
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_quantity_1"
+                    android:layout_width="40dp"
+                    android:textColor="@color/white"
+                    android:backgroundTint="#023d43"
+                    android:background="@drawable/shape1"
+                    android:layout_height="40dp"
+                    android:text="-"/>
+
+                <TextView
+                    android:id="@+id/quantity"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="#023d43"
+                    android:layout_marginHorizontal="8dp"
+                    android:text="1"
+                    android:textSize="18sp"
+                    android:gravity="center" />
+
+                <androidx.appcompat.widget.AppCompatButton
+                    android:id="@+id/btn_quantity_2"
+                    android:layout_width="40dp"
+                    android:layout_height="40dp"
+                    android:textColor="@color/white"
+                    android:text="+"
+                    android:background="@drawable/shape1"
+                    android:backgroundTint="#023d43"
+                    android:layout_marginStart="8dp"/>
+            </LinearLayout>
+
+            <!-- Special Instructions Section -->
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Special Instructions"
+                android:textSize="18sp"
+
+                android:layout_marginStart="15dp"
+                android:textColor="#023d43"
+                android:textStyle="bold"
+                android:layout_marginBottom="8dp"/>
+
+            <EditText
+                android:id="@+id/edit_special_instructions"
+                android:layout_width="match_parent"
+                android:layout_height="100dp"
+                android:padding="15dp"
+                android:layout_marginHorizontal="15dp"
+                android:layout_marginBottom="16dp"
+                android:background="#F6F3F3"
+                android:gravity="start"
+                android:hint="Enter any special instructions"
+                android:maxLines="4"
+                android:textColor="#023d43"
+                android:textColorHint="#736F6F" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <!-- book Button -->
+                <Button
+                    android:id="@+id/service_btn"
+                    android:layout_width="match_parent"
+                    android:layout_marginHorizontal="15dp"
+                    android:layout_height="50dp"
+                    android:layout_marginBottom="40dp"
+                    android:backgroundTint="#FFC83F"
+                    android:text="Add To Cart"
+                    android:layout_marginTop="0dp"
+                    android:textColor="#023d43"
+                    android:textStyle="bold"
+                    android:textSize="16sp"/>
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>
