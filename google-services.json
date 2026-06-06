@@ -1,6 +1,7 @@
 {
   "project_info": {
     "project_number": "89362758775",
+    "firebase_url": "https://luxelaundary-b25e1-default-rtdb.firebaseio.com",
     "project_id": "luxelaundary-b25e1",
     "storage_bucket": "luxelaundary-b25e1.firebasestorage.app"
   },
@@ -15,7 +16,7 @@
       "oauth_client": [],
       "api_key": [
         {
-          "current_key": "AIzaSyBeu77R5FAEebu1Xp9ADINr9iLchRclPtY"
+          "current_key": "AIzaSyCVw3zQoSZV361BwtAMQowvwYP1d1W14J8"
         }
       ],
       "services": {
